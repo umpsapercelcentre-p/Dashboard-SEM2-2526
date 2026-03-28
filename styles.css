@@ -300,3 +300,27 @@ body {
   border-radius: 999px;
   font-weight: 600;
 }
+
+/* EMERGENCY CONTACT */
+.link-button.emergency {
+  border: 1px solid rgba(250, 204, 21, 0.4);
+  background: rgba(250, 204, 21, 0.05);
+}
+
+.link-button.emergency:hover {
+  background: linear-gradient(90deg, var(--accent), #f97316);
+  color: black;
+  border-color: transparent;
+}
+
+/* TEXT SMALL */
+.link-button span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.link-button.emergency span {
+  color: rgba(255,255,255,0.7);
+}
