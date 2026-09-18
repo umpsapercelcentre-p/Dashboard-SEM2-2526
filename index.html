@@ -1,166 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ms">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UMPSA (P) Parcel Center Dashboard • SEM 2 25/26</title>
-  <link rel="icon" type="image/png" href="logo.png" />
+  <title>UMPSA (P) Parcel Center Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-bg"></div>
-  <div class="page-bg-glow"></div>
 
-  <header class="hero">
-    <div class="hero-content">
-      <p class="tagline">
-        <span class="dot"></span> Parcel Management Hub
-      </p>
-      <h1>UMPSA (P) PARCEL CENTER</h1>
-      <h2>Dashboard <span class="sep">•</span> SEM 2 25/26</h2>
-      <p class="hero-desc">
-        All Google Sheets, forms, courier trackers, tools, and semester archive
-        in one place.
-      </p>
+  <div class="aurora"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
 
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num">14</span>
-          <span class="stat-label">Couriers</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">5</span>
-          <span class="stat-label">Tools</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">2</span>
-          <span class="stat-label">Forms</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">4</span>
-          <span class="stat-label">Archives</span>
-        </div>
-      </div>
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="ic-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="ic-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="ic-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6M9 9h1"/></symbol>
+    <symbol id="ic-truck" viewBox="0 0 24 24"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="1.8"/><circle cx="17.5" cy="18.5" r="1.8"/></symbol>
+    <symbol id="ic-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="ic-archive" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="5" rx="1"/><path d="M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9M10 13h4"/></symbol>
+    <symbol id="ic-package" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8l9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8M12 13v8"/></symbol>
+  </svg>
+
+  <header class="manifest">
+    <span class="status-pill"><span class="status-dot"></span>Status Aktif</span>
+    <h1>UMPSA (P) PARCEL CENTER</h1>
+    <p class="sub">Parcel Management Hub — Sem 2 25/26</p>
+    <p class="desc">Semua Google Sheets, borang, penjejak kurier, alat kerja dan arkib semester dalam satu tempat.</p>
+    <div class="hero-seal">
+      <span class="ring"></span>
+      <span class="ring2"></span>
+      <span class="core"><svg class="icon"><use href="#ic-package"/></svg></span>
     </div>
   </header>
 
-  <!-- SEMESTER DASHBOARD SWITCH -->
-  <section class="semester-switch">
-    <div class="sem-container">
-      <a class="sem-card active" href="#">
-        <span class="sem-badge">Current</span>
-        <div class="sem-icon">◉</div>
-        <h3>SEM 2 25/26</h3>
-        <p>Main Dashboard</p>
-        <span class="sem-arrow">→</span>
-      </a>
+  <nav class="sem-tabs">
+    <a class="sem-tab active" href="#">
+      <span class="tag">Aktif</span>
+      <div class="tab-name">SEM 2 25/26</div>
+      <div class="tab-meta">Dashboard Utama</div>
+    </a>
+    <a class="sem-tab" href="https://umpsapercelcentre-p.github.io/parceldashboard/">
+      <div class="tab-name">SEM 1 25/26</div>
+      <div class="tab-meta">Semester Lepas</div>
+    </a>
+  </nav>
 
-      <a class="sem-card" href="https://umpsapercelcentre-p.github.io/parceldashboard/">
-        <div class="sem-icon">◌</div>
-        <h3>SEM 1 25/26</h3>
-        <p>Previous</p>
-        <span class="sem-arrow">→</span>
-      </a>
-    </div>
-  </section>
+  <main class="grid">
 
-  <main class="dashboard">
-
-    <section class="card card-emergency">
-      <div class="card-header">
-        <h3>Emergency Contact</h3>
-        <span class="badge badge-urgent">Urgent</span>
+    <section class="tag-card">
+      <div class="card-head">
+        <div class="icon-badge"><svg class="icon icon-lg"><use href="#ic-phone"/></svg></div>
+        <div class="titles">
+          <div class="eyebrow">Segera</div>
+          <h3>Emergency Contact</h3>
+        </div>
       </div>
-
-      <div class="button-group">
-        <a class="link-button emergency" href="https://wa.link/41eof9" target="_blank">
-          <span class="btn-icon">📞</span>
-          <span class="btn-text">
-            <strong>MEOR</strong>
-            <small>Click to WhatsApp</small>
+      <div class="stack">
+        <a class="link-row emergency" href="https://wa.link/41eof9" target="_blank" rel="noopener">
+          <span class="icon-circle"><svg class="icon"><use href="#ic-phone"/></svg></span>
+          <span class="body">
+            <span class="name">MEOR</span>
+            <span class="hint">Klik untuk WhatsApp</span>
           </span>
+          <svg class="icon"><use href="#ic-arrow"/></svg>
         </a>
-
-        <a class="link-button emergency" href="https://wa.link/jn82li" target="_blank">
-          <span class="btn-icon">📞</span>
-          <span class="btn-text">
-            <strong>DARWISY</strong>
-            <small>Click to WhatsApp</small>
+        <a class="link-row emergency" href="https://wa.link/jn82li" target="_blank" rel="noopener">
+          <span class="icon-circle"><svg class="icon"><use href="#ic-phone"/></svg></span>
+          <span class="body">
+            <span class="name">DARWISY</span>
+            <span class="hint">Klik untuk WhatsApp</span>
           </span>
+          <svg class="icon"><use href="#ic-arrow"/></svg>
         </a>
       </div>
     </section>
 
-    <section class="card">
-      <div class="card-header">
-        <h3>Forms</h3>
-        <span class="badge">2 Links</span>
+    <section class="tag-card">
+      <div class="card-head">
+        <div class="icon-badge"><svg class="icon icon-lg"><use href="#ic-doc"/></svg></div>
+        <div class="titles">
+          <div class="eyebrow">Pendaftaran</div>
+          <h3>Forms</h3>
+        </div>
+        <span class="count-chip">2 Links</span>
       </div>
-      <div class="button-group">
-        <a class="link-button" href="https://forms.gle/Zc2ZajvbXLeVLpoA6" target="_blank">
-          Student Data Registration
+      <div class="stack">
+        <a class="link-row" href="https://forms.gle/Zc2ZajvbXLeVLpoA6" target="_blank" rel="noopener">
+          <span class="body"><span class="name">Student Data Registration</span></span>
+          <svg class="icon"><use href="#ic-arrow"/></svg>
         </a>
-        <a class="link-button" href="https://forms.gle/gubcwkPJ92woqswb8" target="_blank">
-          Staff Attendance Form
+        <a class="link-row" href="https://forms.gle/gubcwkPJ92woqswb8" target="_blank" rel="noopener">
+          <span class="body"><span class="name">Staff Attendance Form</span></span>
+          <svg class="icon"><use href="#ic-arrow"/></svg>
         </a>
       </div>
     </section>
 
-    <section class="card card-wide">
-      <div class="card-header">
-        <h3>Couriers</h3>
-        <span class="badge">14 Trackers</span>
+    <section class="tag-card">
+      <div class="card-head">
+        <div class="icon-badge"><svg class="icon icon-lg"><use href="#ic-grid"/></svg></div>
+        <div class="titles">
+          <div class="eyebrow">Kerja Harian</div>
+          <h3>Tools</h3>
+        </div>
+        <span class="count-chip">5 Sheets</span>
       </div>
+      <div class="stack">
+        <a class="link-row" href="https://docs.google.com/spreadsheets/d/1yp7xfhVfP0WptgQjm6ancutaaT57agy8ShTJA3r_zqQ/edit#gid=1174186655" target="_blank" rel="noopener">
+          <span class="body"><span class="name">Student Database</span></span>
+          <svg class="icon"><use href="#ic-arrow"/></svg>
+        </a>
+        <a class="link-row" href="https://docs.google.com/spreadsheets/d/1AzE16ynfcZ5YriVcKtYZGlw4UFksW9NCYyt7zieMbsA/edit?usp=drive_link" target="_blank" rel="noopener">
+          <span class="body"><span class="name">Parcel Database</span></span>
+          <svg class="icon"><use href="#ic-arrow"/></svg>
+        </a>
+        <a class="link-row" href="https://docs.google.com/spreadsheets/d/1Rks6T8BhiPON1uRCa6jCDJPHfX_mC8-V85EFy1uLMgI/edit?gid=1262807792#gid=1262807792" target="_blank" rel="noopener">
+          <span class="body"><span class="name">Parcel Statistics</span></span>
+          <svg class="icon"><use href="#ic-arrow"/></svg>
+        </a>
+        <a class="link-row" href="https://docs.google.com/spreadsheets/d/1Z6OJgrfVSpo81nNWnQbSZXcf0-IfmX0AYSTLgSp3FAM/edit?usp=drive_link" target="_blank" rel="noopener">
+          <span class="body"><span class="name">KPI</span></span>
+          <svg class="icon"><use href="#ic-arrow"/></svg>
+        </a>
+        <a class="link-row" href="https://docs.google.com/spreadsheets/d/1kt7OostQ0CUt5jCX0uASMdf27tcSxkvQQbP8oW50O_E/edit?usp=drive_link" target="_blank" rel="noopener">
+          <span class="body"><span class="name">Late Parcel Processing</span></span>
+          <svg class="icon"><use href="#ic-arrow"/></svg>
+        </a>
+      </div>
+    </section>
 
+    <section class="tag-card full">
+      <div class="card-head">
+        <div class="icon-badge"><svg class="icon icon-lg"><use href="#ic-truck"/></svg></div>
+        <div class="titles">
+          <div class="eyebrow">Penjejakan</div>
+          <h3>Couriers</h3>
+        </div>
+        <span class="count-chip">14 Trackers</span>
+      </div>
       <div class="courier-grid">
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1vIr5IZvUxHHHuspDoqnZBygnivjO1HXcWWt-q0PLrps/edit?gid=415960112#gid=415960112" target="_blank">Shopee</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1e-gMW-t3EDb0FMpumenchw06whduWIjdGiCJYGwMFf8/edit?gid=415960112#gid=415960112" target="_blank">J&T</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1vGvmcd22NXP4NuAok0OwfTpBzyHA1oUSta8Odq1T4KI/edit?gid=415960112#gid=415960112" target="_blank">Flash</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1WSbw2UXP80eqUvIqFv0LqEb7R6yv1tRmLB8ryXyR-GM/edit?gid=415960112#gid=415960112" target="_blank">Ninja Van</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1r9gcsnlBt3ZNtPeDVmGXDoyL--wc4aVB1C0XaH318-A/edit?gid=415960112#gid=415960112" target="_blank">Poslaju</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1jHdIqTFuL_f3PQWrJOIzKBGKXqp6-SPNNqbW2nWR6wQ/edit?gid=415960112#gid=415960112" target="_blank">GDEX</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/14FlR3wcFR9VIm4ENMPfY2MIG1ndXs9LrFcQuw0HAl_A/edit?gid=415960112#gid=415960112" target="_blank">ABX KEX</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1PrZX5rbQ8E9fNP_DLPJj4ItCBNwGNbkXTmWNIVQmCHQ/edit?gid=415960112#gid=415960112" target="_blank">Best</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1EXOeoHGVEijMBtTajJ4Egiu295xDf0yiQeAgRuzKvgY/edit?gid=415960112#gid=415960112" target="_blank">Pgeon</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1atag473BVceOkUkupSf1OJFfiHhQByEAM0jEPuNXCCY/edit?gid=415960112#gid=415960112" target="_blank">DHL</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1-NyFe7yYUnXe8QrcWALvLLZbvveb3Xxe2tkeeWdQP1o/edit?gid=415960112#gid=415960112" target="_blank">Lazada</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1kU4DU2KDtGKHia7NGyVU5gcpAfdivXWDzbaaDHe98RA/edit?gid=415960112#gid=415960112" target="_blank">CityLink</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1SAE08YT6RvtT1ORIMQV77csCnLIKFJP1AassG7vlml4/edit?gid=415960112#gid=415960112" target="_blank">Line Clear</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1DWSXmAN6iB_FTUCCjrBrAx6PYUxwkvSSKQoqua3WXlg/edit?gid=415960112#gid=415960112" target="_blank">Skynet</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/1vIr5IZvUxHHHuspDoqnZBygnivjO1HXcWWt-q0PLrps/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">Shopee</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/1e-gMW-t3EDb0FMpumenchw06whduWIjdGiCJYGwMFf8/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">J&amp;T</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/1vGvmcd22NXP4NuAok0OwfTpBzyHA1oUSta8Odq1T4KI/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">Flash</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/1WSbw2UXP80eqUvIqFv0LqEb7R6yv1tRmLB8ryXyR-GM/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">Ninja Van</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/1r9gcsnlBt3ZNtPeDVmGXDoyL--wc4aVB1C0XaH318-A/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">Poslaju</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/1jHdIqTFuL_f3PQWrJOIzKBGKXqp6-SPNNqbW2nWR6wQ/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">GDEX</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/14FlR3wcFR9VIm4ENMPfY2MIG1ndXs9LrFcQuw0HAl_A/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">ABX KEX</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/1PrZX5rbQ8E9fNP_DLPJj4ItCBNwGNbkXTmWNIVQmCHQ/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">Best</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/1EXOeoHGVEijMBtTajJ4Egiu295xDf0yiQeAgRuzKvgY/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">Pgeon</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/1atag473BVceOkUkupSf1OJFfiHhQByEAM0jEPuNXCCY/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">DHL</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/1-NyFe7yYUnXe8QrcWALvLLZbvveb3Xxe2tkeeWdQP1o/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">Lazada</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/1kU4DU2KDtGKHia7NGyVU5gcpAfdivXWDzbaaDHe98RA/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">CityLink</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/1SAE08YT6RvtT1ORIMQV77csCnLIKFJP1AassG7vlml4/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">Line Clear</a>
+        <a class="courier-item" href="https://docs.google.com/spreadsheets/d/1DWSXmAN6iB_FTUCCjrBrAx6PYUxwkvSSKQoqua3WXlg/edit?gid=415960112#gid=415960112" target="_blank" rel="noopener">Skynet</a>
       </div>
     </section>
 
-    <section class="card">
-      <div class="card-header">
-        <h3>Tools</h3>
-        <span class="badge">5 Sheets</span>
-      </div>
-      <div class="button-group">
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1yp7xfhVfP0WptgQjm6ancutaaT57agy8ShTJA3r_zqQ/edit#gid=1174186655" target="_blank">Student Database</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1AzE16ynfcZ5YriVcKtYZGlw4UFksW9NCYyt7zieMbsA/edit?usp=drive_link" target="_blank">Parcel Database</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1Rks6T8BhiPON1uRCa6jCDJPHfX_mC8-V85EFy1uLMgI/edit?gid=1262807792#gid=1262807792" target="_blank">Parcel Statistics</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1Z6OJgrfVSpo81nNWnQbSZXcf0-IfmX0AYSTLgSp3FAM/edit?usp=drive_link" target="_blank">KPI</a>
-        <a class="link-button" href="https://docs.google.com/spreadsheets/d/1kt7OostQ0CUt5jCX0uASMdf27tcSxkvQQbP8oW50O_E/edit?usp=drive_link" target="_blank">Late Parcel Processing</a>
-      </div>
-    </section>
-
-    <section class="card card-full">
-      <div class="card-header">
-        <h3>Google Drive Archive</h3>
-        <span class="badge">Previous Semesters</span>
+    <section class="tag-card full">
+      <div class="card-head">
+        <div class="icon-badge"><svg class="icon icon-lg"><use href="#ic-archive"/></svg></div>
+        <div class="titles">
+          <div class="eyebrow">Simpanan</div>
+          <h3>Google Drive Archive</h3>
+        </div>
+        <span class="count-chip">Previous Semesters</span>
       </div>
       <div class="archive-grid">
-        <a class="link-button" href="https://drive.google.com/drive/folders/1ol8a-yfY1sN02S3UT3rEPmrYaCn0YyZ2" target="_blank">Parcel Pekan SEM 2 23/24</a>
-        <a class="link-button" href="https://drive.google.com/drive/folders/1XadOngkGHjAGqkHxi4fgwVhnjcl50Xvh" target="_blank">Parcel Pekan SEM 1 24/25</a>
-        <a class="link-button" href="https://drive.google.com/drive/folders/1Zn2ScnKVTRyUw3jAzJJwZYalifunHYQe" target="_blank">Parcel Pekan SEM 2 24/25</a>
-        <a class="link-button" href="https://drive.google.com/drive/folders/1hlF-IDaepJUvkxz2rNQQHXEKFkAToliF" target="_blank">Parcel Pekan SEM 1 25/26</a>
+        <a class="link-row" href="https://drive.google.com/drive/folders/1ol8a-yfY1sN02S3UT3rEPmrYaCn0YyZ2" target="_blank" rel="noopener">
+          <span class="body"><span class="name">Parcel Pekan SEM 2 23/24</span></span>
+          <svg class="icon"><use href="#ic-arrow"/></svg>
+        </a>
+        <a class="link-row" href="https://drive.google.com/drive/folders/1XadOngkGHjAGqkHxi4fgwVhnjcl50Xvh" target="_blank" rel="noopener">
+          <span class="body"><span class="name">Parcel Pekan SEM 1 24/25</span></span>
+          <svg class="icon"><use href="#ic-arrow"/></svg>
+        </a>
+        <a class="link-row" href="https://drive.google.com/drive/folders/1Zn2ScnKVTRyUw3jAzJJwZYalifunHYQe" target="_blank" rel="noopener">
+          <span class="body"><span class="name">Parcel Pekan SEM 2 24/25</span></span>
+          <svg class="icon"><use href="#ic-arrow"/></svg>
+        </a>
+        <a class="link-row" href="https://drive.google.com/drive/folders/1hlF-IDaepJUvkxz2rNQQHXEKFkAToliF" target="_blank" rel="noopener">
+          <span class="body"><span class="name">Parcel Pekan SEM 1 25/26</span></span>
+          <svg class="icon"><use href="#ic-arrow"/></svg>
+        </a>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <p>© 2026 UMPSA (P) Parcel Center • Built with care</p>
+  <footer>
+    <div class="line1">UMPSA (P) Parcel Center · Sem 2 25/26</div>
+    <div class="line2" id="liveClock"></div>
   </footer>
+
+  <script>
+  (function(){
+    var el = document.getElementById('liveClock');
+    function tick(){
+      try{
+        var fmt = new Intl.DateTimeFormat('ms-MY', {
+          timeZone:'Asia/Kuala_Lumpur', weekday:'short', day:'2-digit',
+          month:'short', year:'numeric', hour:'2-digit', minute:'2-digit'
+        });
+        if(el) el.textContent = 'Dikemaskini · ' + fmt.format(new Date());
+      }catch(e){}
+    }
+    tick();
+    setInterval(tick, 30000);
+  })();
+  </script>
+
 </body>
 </html>
